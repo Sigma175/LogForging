@@ -15,6 +15,9 @@ public class HelloExample{
 	
 	private void runMe(String parameter){
 		
+		String password = "Alpha123";
+		System.out.println("password is"+password);
+		
 	
 		if(logger.isDebugEnabled()){
 			logger.debug("This is debug : " + parameter);
@@ -26,6 +29,7 @@ public class HelloExample{
 		
 		logger.warn("This is warn : " + parameter);
 		logger.error("This is error : " + parameter);
+		logger.error("The password is : " + password);
 		logger.fatal("This is fatal : " + parameter);
 		
 	}
